@@ -53,7 +53,7 @@ export default async function Home() {
   const dataFaq = await getDataWebsite({id: '5', endPoint: 'get-faq'});
   return (
     <>
-      <section className="relative best-selling w-full py-5 px-8 md:px-32">
+      <section className="relative best-selling w-full py-5 px-8 md:px-32 bg-white">
         <BannerSlider data={dataBanner}/>
         <div className="banner-left absolute left-10 md:left-36 z-10 top-1/2 -translate-y-1/2 text-xs md:text-base lg:text-xl bg-[#54999d] hover:bg-gray-400 cursor-pointer w-6 h-6 md:w-10 md:h-10  lg:w-12 lg:h-12 rounded-full flex justify-center items-center text-white">
           <FontAwesomeIcon icon={faChevronLeft}/>
