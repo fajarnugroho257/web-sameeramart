@@ -1,0 +1,41 @@
+@import "tailwindcss";
+
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0a0a0a;
+    --foreground: #ededed;
+  }
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.custom-pagination .swiper-pagination-bullet {
+  background-color: #9ca3af; /* gray-400 */
+  width: 0.75rem; /* w-3 */
+  height: 0.75rem; /* h-3 */
+  border-radius: 9999px;
+  opacity: 0.7;
+}
+
+.custom-pagination .swiper-pagination-bullet-active {
+  background-color: #6fc7cc; /* red-500 */
+  width: 1rem; /* w-4 */
+  height: 1rem; /* h-4 */
+  opacity: 1;
+}
